@@ -1,3 +1,4 @@
+
 exports.handleProfile = (req, res) => {
     const { id } = req.params;
     knex.select('*').from('users').where({id})
