@@ -1,4 +1,5 @@
-import { PAT_KEY } from "./KEY";
+const { PAT_KEY } = process.env
+console.log('pat_key', PAT_KEY)
 
 const FaceDetection = (imgUrl) => {
     console.log("faceDetection was called");

@@ -1,5 +1,4 @@
-const CONST = require('../services/KEY');
-const { PAT_KEY } = CONST;
+const { PAT_KEY } = process.env;
 
 exports.handleImage = (req, res, knex) => {
     const { id } = req.body;
@@ -19,7 +18,7 @@ exports.handleImage = (req, res, knex) => {
 exports.faceDetection = (req, res) => {
     // console.log("faceDetection was called");
     const IMAGE_URL = req.body.imgUrl;
-    console.log("imgurl=", IMAGE_URL);
+    //console.log("imgurl=", IMAGE_URL);
 
     const raw = JSON.stringify({
     "user_app_id": {
