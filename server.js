@@ -39,9 +39,12 @@ app.put('/image', (req, res) => { image.handleImage(req, res, knex) })
 
 app.post('/image-detect', (req, res) => { image.faceDetection(req, res) })
 
+const PORT = 3000;
+// console.log(process.env);
 
-app.listen(3000, () => {
-    console.log('app is running on port 3000');
+
+app.listen(PORT, () => {
+    console.log(`app is running on port ${PORT}`);
 })
 
 /* scematic 
