@@ -10,7 +10,7 @@ const register = require('./controllers/Register');
 const root = require('./controllers/Root');
 const signin = require('./controllers/Signin');
 const profile = require('./controllers/Profile');
-const image = requir
+const image = require('./controllers/Image');
 
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
