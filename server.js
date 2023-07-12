@@ -16,11 +16,8 @@ console.log(register.handleRegister);
 const knex = require('knex')({
     client: 'pg',
     connection: {
-      host : 'postgresql-infinite-68583',
-      port : 5432,
-      user : 'michaelsutton',
-      password : '',
-      database : 'smart-brain'
+      host : process.env.DATABASE_URL,
+      ssl: true
     }
 });
 
