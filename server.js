@@ -10,7 +10,10 @@ const register = require('./controllers/Register');
 const root = require('./controllers/Root');
 const signin = require('./controllers/Signin');
 const profile = require('./controllers/Profile');
-const image = require('./controllers/Image');
+const image = requir
+
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0; 
 
 console.log(register.handleRegister);
 const knex = require('knex')({
