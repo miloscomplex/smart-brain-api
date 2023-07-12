@@ -16,7 +16,7 @@ console.log(register.handleRegister);
 const knex = require('knex')({
     client: 'pg',
     connection: {
-      host : process.env.DATABASE_URL,
+      connectionString : process.env.DATABASE_URL,
       ssl: true
     }
 });
